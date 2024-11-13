@@ -87,9 +87,9 @@ RCLONE=/usr/bin/rclone
 rclone_init() {
   # Install rclone - https://wiki.alpinelinux.org/wiki/Rclone
   # rclone install now handled in Dockerfile, so this function should never be executed
-  curl -O https://downloads.rclone.org/rclone-current-linux-amd64.zip
-  unzip rclone-current-linux-amd64.zip
-  cd rclone-*-linux-amd64
+  curl -O https://downloads.rclone.org/rclone-current-linux-arm64.zip
+  unzip rclone-current-linux-arm64.zip
+  cd rclone-*-linux-arm64
   cp rclone /usr/bin/
   chown root:root $RCLONE
   chmod 755 $RCLONE
